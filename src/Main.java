@@ -5,7 +5,7 @@ void main() {
 
     int opcion = 0;
     String texto;
-    int numero1, numero2, resultado;
+    double numero1, numero2, resultado;
 
     while (opcion != 5) {
 
@@ -17,36 +17,36 @@ void main() {
         IO.println("5. Salir");
 
         texto = IO.readln("Seleccione una opción: ");
-        opcion = Integer.parseInt(texto);
+        opcion = Integer.parseInt(texto); // La opción del menú sigue siendo entera
 
         switch (opcion) {
 
             case 1:
-                numero1 = Integer.parseInt(IO.readln("Ingrese el primer número: "));
-                numero2 = Integer.parseInt(IO.readln("Ingrese el segundo número: "));
+                numero1 = Double.parseDouble(IO.readln("Ingrese el primer número: "));
+                numero2 = Double.parseDouble(IO.readln("Ingrese el segundo número: "));
                 resultado = numero1 + numero2;
                 IO.println("Resultado: " + resultado);
                 break;
 
             case 2:
-                numero1 = Integer.parseInt(IO.readln("Ingrese el primer número: "));
-                numero2 = Integer.parseInt(IO.readln("Ingrese el segundo número: "));
+                numero1 = Double.parseDouble(IO.readln("Ingrese el primer número: "));
+                numero2 = Double.parseDouble(IO.readln("Ingrese el segundo número: "));
                 resultado = numero1 - numero2;
                 IO.println("Resultado: " + resultado);
                 break;
 
             case 3:
-                numero1 = Integer.parseInt(IO.readln("Ingrese el primer número: "));
-                numero2 = Integer.parseInt(IO.readln("Ingrese el segundo número: "));
+                numero1 = Double.parseDouble(IO.readln("Ingrese el primer número: "));
+                numero2 = Double.parseDouble(IO.readln("Ingrese el segundo número: "));
                 resultado = numero1 * numero2;
                 IO.println("Resultado: " + resultado);
                 break;
 
             case 4:
-                numero1 = Integer.parseInt(IO.readln("Ingrese el primer número: "));
-                numero2 = Integer.parseInt(IO.readln("Ingrese el segundo número: "));
+                numero1 = Double.parseDouble(IO.readln("Ingrese el primer número: "));
+                numero2 = Double.parseDouble(IO.readln("Ingrese el segundo número: "));
 
-                if (numero2 != 0) {
+                if (numero2 != 0.0) {
                     IO.println("Resultado: " + (numero1 / numero2));
                 } else {
                     IO.println("No se puede dividir para cero.");
