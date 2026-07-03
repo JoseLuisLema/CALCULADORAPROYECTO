@@ -52,6 +52,14 @@ void main() {
                     IO.println("No se puede dividir para cero.");
                 }
                 break;
+
+            case 5:
+                IO.println("Gracias por usar la calculadora.");
+                break;
+
+            default:
+                IO.println("Opción inválida.");
+                break;
         }
     }
 }
