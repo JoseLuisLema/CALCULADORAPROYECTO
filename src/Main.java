@@ -27,6 +27,13 @@ void main() {
                 resultado = numero1 + numero2;
                 IO.println("Resultado: " + resultado);
                 break;
+
+            case 2:
+                numero1 = Integer.parseInt(IO.readln("Ingrese el primer número: "));
+                numero2 = Integer.parseInt(IO.readln("Ingrese el segundo número: "));
+                resultado = numero1 - numero2;
+                IO.println("Resultado: " + resultado);
+                break;
         }
     }
 }
