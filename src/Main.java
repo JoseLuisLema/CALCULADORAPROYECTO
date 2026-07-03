@@ -41,6 +41,17 @@ void main() {
                 resultado = numero1 * numero2;
                 IO.println("Resultado: " + resultado);
                 break;
+
+            case 4:
+                numero1 = Integer.parseInt(IO.readln("Ingrese el primer número: "));
+                numero2 = Integer.parseInt(IO.readln("Ingrese el segundo número: "));
+
+                if (numero2 != 0) {
+                    IO.println("Resultado: " + (numero1 / numero2));
+                } else {
+                    IO.println("No se puede dividir para cero.");
+                }
+                break;
         }
     }
 }
